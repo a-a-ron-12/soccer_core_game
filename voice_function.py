@@ -1,6 +1,4 @@
 
-import time
-import random
 import pyttsx3
 
 
@@ -20,19 +18,3 @@ def text_to_voice(text):
 
     # Play the speech
     tts_engine.runAndWait()
-
-
-# Set the start time and duration
-duration = 10
-start_time = time.time()
-color_list = ["blue", "green", "purple", "yellow"]
-
-# Loop through as many times before the duration ends
-while (time.time() - start_time) < duration:
-    
-    random.shuffle(color_list)
-    
-    text_to_voice(color_list[0])
-    print(color_list[0])
-    
-text_to_voice("STOP! Game Over; you lose!")

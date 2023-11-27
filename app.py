@@ -13,6 +13,7 @@ start_time = time.time()
 
 # Start Level One
 text_to_voice("Level 1 is about to begin.")
+time.sleep(1)
 
 # Loop until duration limit is met
 while (time.time() - start_time) < duration:
@@ -25,5 +26,5 @@ while (time.time() - start_time) < duration:
     text_to_voice(color_list[0])
 
 # End Game
-stop_message = "STOP! Game Over; you lose!"
+stop_message = "STOP! This round is over."
 text_to_voice(stop_message)
